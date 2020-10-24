@@ -1,0 +1,19 @@
+1. Explain the difference between Relational Databases and SQL.
+
+SQL databases are known as relational databases, and have a table-based data structure, with a strict, predefined schema required. NoSQL databases, or non-relational databases, can be document based, graph databases, key-value pairs, or wide-column stores.
+An RDBMS is a Relational Database Management System. It is the database software itself, which manages storage, querying, updating, and, well, everything. Specifically, an RDBMS uses a relational model
+of data, as the name suggests. If you want to work on an RDBMS, you’ll need to learn its implementation language (often C), relational model theory, and a lot of nitty-gritty stuff about filesystem access, transactional logging, scalability, synchronisation, and so on.
+SQL, the Structured Query Language, is a language (or a family of closely related languages or dialects) which is typically used to query the RDBMS. If you want to work with SQL, you just learn SQL and maybe a tiny bit of relational model theory for background.
+
+2. Why do tables need a primary key?
+
+    A primary key is a table column that serves a special purpose. Each database table needs a primary key because it ensures row-level accessibility. ... The values that compose a primary key column are unique; no two values are the same. Each table has one and only one primary key, which can consist of one or many columns.
+    
+3. What is the name given to a table column that references the primary key on another table.
+
+A FOREIGN KEY is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table. The table containing the foreign key is called the child table, and the table containing the candidate key is called the referenced or parent table.
+
+4. What do we need in order to have a many to many relationship between two tables.
+
+
+To create a many-to-many relationship between the Orders and Products tables, we need to create a join table between them like the Products_Orders table in this example. The primary key of the join table is the combination of the primary keys of the tables that we would like to join in a many-to-many relationship.
