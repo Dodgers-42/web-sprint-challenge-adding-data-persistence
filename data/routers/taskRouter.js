@@ -1,14 +1,24 @@
-express = require("express")
-const db = require("../config")
-const router = express.Router()
+const express = require("express");
 
-// router.get("/", async (req, res, next)=> {
-//     try{
+const Task = require("./project-model");
 
-//     }
-//     catch(err){
-//         next(err)
-//     }
-// })
+const router = express.Router();
 
-module.exports = router
+router.get("/:id/task", (req, res) => {
+  const { id } = req.params;
+  Task.getResourceByTaskId(id)
+    .then((resource) => {
+      if (resource.length) {
+        res.json({ resource });
+      } else {
+        res
+          .status(404)
+          .json({ message: "No resources found for the given task" });
+      }
+    })
+    .catch((err) => {
+      res.status(500).json({ message: "Failed to get resources" });
+    });
+});
+
+module.exports = router;
