@@ -1,10 +1,10 @@
 exports.seed = async function(knex) {
     // Deletes ALL existing entries
     await knex("task").insert([
-      {name: "gluten free pumpkin pancake mix" , instructions:"Preheat oven to 350 degrees F, whisp together egg and butter, stir in pancake mix , lightly grease griddle pan."},
-      {name: "gluten free funfetti cake mix", instructions:"Preheat oven to 350 degrees F, whisp together cake mix, water, egg and oil, stir in a large bowl tile combined, bake for 34 - 38 min."},
-      {name: "gluten free chocolate chip cookie mix" , instructions:"Preheat oven to 350 degrees F, whisp together cookie mix, egg, vanilla, and butter, stir in till combined, form round tablesspoon  balls and bake for 13-15 min. "},
-      {name: "gluten free pumpkin bread mix", instructions: "Preheat oven to 350 degrees F, whisp together water, oil, egg and pumpkin mix, place in a greased bread pan, and bake for 50 - 55min."},
+      {name: "painting a room" , instructions:"Setting up the ladder, taping off the room to make sure you don't make any mistakes, laying don to tarp to cover things to make sure you don't make a mess, pouring the paint into a container, use a brush to apply the paint, wiping up any mistakes, cleaning up after you are done."},
+      {name: "painting facia on the house", instructions:"Setting up the ladder, taping off the wood to make sure you don't make any mistakes, pouring the paint into a container, use a brush to apply the paint, wiping up any mistakes, cleaning up after you are done."},
+      {name: "trimming a tree" , instructions:"Setting up the ladder, getting the cutting tools from the shed, cutting donw the trims that need trimming, cutting the limbs into smaller pieces to fit into the trash can, putting the tools away. "},
+      
     ])
    
   };

@@ -1,16 +1,12 @@
 exports.seed =async function(knex) {
     // Deletes ALL existing entries
     await knex("project").insert([
-      {amount: "1 cup"},
-      {amount: "1/2 cup"},
-      {amount: "1/4 cup"},
-      {amount: "1/3 cup"},
-      {amount: "1 tablespoon"},
-      {amount: "1 teaspoon"},
-      {amount: "2 tablespoons"},
-      {amount: "1 egg"},
-      {amount: "2 egg"},
-      {amount: "3 egg"},
+      {amount: "1 gallon"},
+      {amount: "1 roll of tape"},
+      {amount: "1 brush"},
+      {amount: "12 ft tarp"},
+      {amount: "1 saw"},
+      {amount: "1 latter"},
       
     ])
   };
